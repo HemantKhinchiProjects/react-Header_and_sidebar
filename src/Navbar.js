@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './images/logo.svg';
-import { FaFlipboard, FaBars } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { useGlobalContext } from './context';
 const Navbar = () => {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
@@ -8,8 +8,11 @@ const Navbar = () => {
     <nav className="nav">
       <div className="nav-center">
         <div className="nav-header">
-          <FaFlipboard className="nav-logo" size="40" />
-
+          <img
+            src="https://raw.githubusercontent.com/john-smilga/react-projects/731d90db6cadfaed6510fa7dedf5b531181ceb8a/13-stripe-submenus/setup/src/images/logo.svg"
+            className="nav-logo"
+            alt="logo"
+          />
           <button className="btn toggle-btn" onClick={openSidebar}>
             <FaBars />
           </button>
