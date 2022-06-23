@@ -1,11 +1,17 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
+import Navbar from './Navbar';
+import Sidebar from './Sidebar';
+import Submenu from './Submenu';
+import Hero from './Hero';
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happenAFaf :)</p>
-    </div>
+    <>
+      <Navbar />
+      <Sidebar />
+      <Hero />
+      <Submenu />
+    </>
   );
 }
